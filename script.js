@@ -1,207 +1,99 @@
-// ===================================
-// inQRedible Landing Page Scripts
-// ===================================
+(() => {
+    const documentLanguage = document.documentElement.lang.toLowerCase();
+    const searchParams = new URLSearchParams(window.location.search);
+    if (!documentLanguage.startsWith('en') || searchParams.get('lang') === 'en') return;
+
+    const preferredLanguages = navigator.languages && navigator.languages.length
+        ? navigator.languages
+        : [navigator.language];
+    const prefersSpanish = preferredLanguages.some((language) => (language || '').toLowerCase().startsWith('es'));
+    if (!prefersSpanish) return;
+
+    const routes = {
+        '/': '/es/',
+        '/index.html': '/es/',
+        '/privacy.html': '/es/privacy.html',
+        '/terms.html': '/es/terms.html'
+    };
+    const targetPath = routes[window.location.pathname];
+    if (targetPath) {
+        window.location.replace(`${targetPath}${window.location.search}${window.location.hash}`);
+    }
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-menu a');
-
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            mobileMenuBtn.classList.toggle('active');
-        });
-
-        // Close menu when clicking a link
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
-            });
-        });
-    }
-
-    // Navbar scroll effect
-    const navbar = document.querySelector('.navbar');
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 100) {
-            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
-        } else {
-            navbar.style.boxShadow = 'none';
-        }
-
-        lastScroll = currentScroll;
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const navHeight = navbar.offsetHeight;
-                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Intersection Observer for animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    // Observe elements for scroll animations
-    const animatedElements = document.querySelectorAll('.feature-card, .screenshot-item, .pricing-card');
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-
-    // Add stagger delay to animated elements
-    document.querySelectorAll('.feature-card').forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.1}s`;
-    });
-
-    document.querySelectorAll('.screenshot-item').forEach((item, index) => {
-        item.style.transitionDelay = `${index * 0.1}s`;
-    });
-
-    document.querySelectorAll('.pricing-card').forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.15}s`;
-    });
-
-    // Parallax effect for hero blobs
-    const blobs = document.querySelectorAll('.gradient-blob');
-    
-    window.addEventListener('mousemove', (e) => {
-        const { clientX, clientY } = e;
-        const centerX = window.innerWidth / 2;
-        const centerY = window.innerHeight / 2;
-        
-        const moveX = (clientX - centerX) / 50;
-        const moveY = (clientY - centerY) / 50;
-
-        blobs.forEach((blob, index) => {
-            const factor = (index + 1) * 0.5;
-            blob.style.transform = `translate(${moveX * factor}px, ${moveY * factor}px)`;
-        });
-    });
-
-    // Counter animation for stats
-    const animateCounter = (element, target) => {
-        let current = 0;
-        const increment = target / 50;
-        const duration = 1500;
-        const stepTime = duration / 50;
-
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                element.textContent = target + '+';
-                clearInterval(timer);
-            } else {
-                element.textContent = Math.floor(current) + '+';
-            }
-        }, stepTime);
-    };
-
-    // Observe stats for animation
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const statNumber = entry.target.querySelector('.stat-number');
-                if (statNumber && statNumber.dataset.animated !== 'true') {
-                    const value = parseInt(statNumber.textContent);
-                    if (!isNaN(value)) {
-                        animateCounter(statNumber, value);
-                        statNumber.dataset.animated = 'true';
-                    }
-                }
-            }
-        });
-    }, { threshold: 0.5 });
-
-    document.querySelectorAll('.stat').forEach(stat => {
-        statsObserver.observe(stat);
-    });
-
-    // Screenshot carousel touch/swipe support for mobile
-    const carousel = document.querySelector('.screenshots-carousel');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    if (carousel) {
-        carousel.addEventListener('mousedown', (e) => {
-            isDown = true;
-            startX = e.pageX - carousel.offsetLeft;
-            scrollLeft = carousel.scrollLeft;
-        });
-
-        carousel.addEventListener('mouseleave', () => {
-            isDown = false;
-        });
-
-        carousel.addEventListener('mouseup', () => {
-            isDown = false;
-        });
-
-        carousel.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - carousel.offsetLeft;
-            const walk = (x - startX) * 2;
-            carousel.scrollLeft = scrollLeft - walk;
-        });
-    }
-
-    // Add active state to nav links based on scroll position
+    const header = document.querySelector('[data-header]');
+    const menuButton = document.querySelector('[data-menu-button]');
+    const mobileMenu = document.querySelector('[data-mobile-menu]');
+    const navLinks = document.querySelectorAll('.nav-links a, .mobile-panel a');
     const sections = document.querySelectorAll('section[id]');
-    
-    window.addEventListener('scroll', () => {
-        let current = '';
-        const navHeight = navbar.offsetHeight;
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - navHeight - 100;
-            const sectionHeight = section.offsetHeight;
-            
-            if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-                current = section.getAttribute('id');
-            }
-        });
+    const setHeaderState = () => {
+        if (!header) return;
+        header.classList.toggle('is-scrolled', window.scrollY > 12);
+    };
 
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
+    const closeMobileMenu = () => {
+        if (!menuButton || !mobileMenu) return;
+        menuButton.classList.remove('is-open');
+        mobileMenu.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+    };
+
+    if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.classList.toggle('is-open');
+            mobileMenu.classList.toggle('is-open', isOpen);
+            menuButton.setAttribute('aria-expanded', String(isOpen));
         });
+    }
+
+    navLinks.forEach((link) => {
+        link.addEventListener('click', () => closeMobileMenu());
     });
 
-    console.log('🚀 inQRedible landing page loaded!');
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeMobileMenu();
+        }
+    });
+
+    setHeaderState();
+    window.addEventListener('scroll', setHeaderState, { passive: true });
+
+    const revealElements = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.14 });
+
+        revealElements.forEach((element) => revealObserver.observe(element));
+    } else {
+        revealElements.forEach((element) => element.classList.add('is-visible'));
+    }
+
+    const desktopLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    if ('IntersectionObserver' in window && sections.length) {
+        const sectionObserver = new IntersectionObserver((entries) => {
+            const visible = entries
+                .filter((entry) => entry.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+            if (!visible) return;
+            const id = visible.target.getAttribute('id');
+            desktopLinks.forEach((link) => {
+                link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+            });
+        }, {
+            rootMargin: '-35% 0px -55% 0px',
+            threshold: [0.08, 0.2, 0.4]
+        });
+
+        sections.forEach((section) => sectionObserver.observe(section));
+    }
 });
