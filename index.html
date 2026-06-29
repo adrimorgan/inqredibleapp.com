@@ -6,6 +6,9 @@
     <meta name="description" content="QR code generator for iPhone: create QR codes with logos, colors, shapes, Wi-Fi, vCard, events, social links, QR reader, scanner and barcodes.">
     <meta name="keywords" content="QR code generator, QR generator, QR code with logo, create QR code, iPhone QR scanner, QR reader, barcode generator, WiFi QR code, vCard QR, custom QR code, inQRedible">
     <meta name="author" content="inQRedible">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="apple-itunes-app" content="app-id=6748907388">
+    <meta name="application-name" content="inQRedible">
     <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#080b11" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://inqredibleapp.com/">
@@ -29,28 +32,98 @@
 
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="preload" as="image" href="images/en/screenshot-hero.png" imagesrcset="images/en/screenshot-hero.png 1284w">
     <link rel="stylesheet" href="styles.css">
 
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "QR Code Generator: inQRedible",
-        "alternateName": "inQRedible",
-        "operatingSystem": "iOS",
-        "applicationCategory": "UtilitiesApplication",
-        "description": "QR code generator and QR reader for iPhone with templates for links, Wi-Fi, contacts, events, social profiles, barcodes, logos, colors, shapes and high-resolution export.",
-        "image": "https://inqredibleapp.com/images/app-icon.png",
-        "downloadUrl": "https://apps.apple.com/app/inqredible/id6748907388",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "inQRedible"
-        }
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://inqredibleapp.com/#organization",
+                "name": "inQRedible",
+                "url": "https://inqredibleapp.com/",
+                "logo": "https://inqredibleapp.com/images/app-icon.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "support@inqredibleapp.com",
+                    "contactType": "customer support"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://inqredibleapp.com/#website",
+                "name": "inQRedible",
+                "url": "https://inqredibleapp.com/",
+                "inLanguage": "en",
+                "publisher": { "@id": "https://inqredibleapp.com/#organization" }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://inqredibleapp.com/#app",
+                "name": "QR Code Generator: inQRedible",
+                "alternateName": "inQRedible",
+                "operatingSystem": "iOS",
+                "applicationCategory": "UtilitiesApplication",
+                "applicationSubCategory": "QR code generator",
+                "description": "QR code generator and QR reader for iPhone with templates for links, Wi-Fi, contacts, events, social profiles, barcodes, logos, colors, shapes and high-resolution export.",
+                "image": "https://inqredibleapp.com/images/app-icon.png",
+                "screenshot": [
+                    "https://inqredibleapp.com/images/en/screenshot-hero.png",
+                    "https://inqredibleapp.com/images/en/screenshot1.png",
+                    "https://inqredibleapp.com/images/en/screenshot4.png"
+                ],
+                "url": "https://inqredibleapp.com/",
+                "downloadUrl": "https://apps.apple.com/app/inqredible/id6748907388",
+                "installUrl": "https://apps.apple.com/app/inqredible/id6748907388",
+                "isAccessibleForFree": true,
+                "featureList": [
+                    "Create QR codes for URLs, Wi-Fi, vCard contacts, events, email, SMS, phone, location and social profiles",
+                    "Customize QR modules, eyes, colors, gradients, logo, background and content images",
+                    "Generate EAN-13, UPC-A, Code 128 and PDF417 barcodes",
+                    "Scan QR codes and barcodes with local history and basic link risk signals",
+                    "Export PNG files up to 4096 px with transparent background in PRO"
+                ],
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                },
+                "author": { "@id": "https://inqredibleapp.com/#organization" }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://inqredibleapp.com/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Can I create a QR code with a logo on iPhone?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. inQRedible lets you add a center logo, choose module and eye styles, adjust colors and export the result from your iPhone."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does inQRedible generate Wi-Fi QR codes?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The Wi-Fi template supports open, WEP and WPA/WPA2 networks, hidden networks and the standard QR Wi-Fi format."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are my QR codes uploaded to a server?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "QR content, logos, selected images and history are processed locally on your iPhone. The app does not upload that content to inQRedible servers to generate codes."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -151,6 +224,58 @@
                 <div>
                     <strong>Private by design</strong>
                     <span>created content, images and history stay on your iPhone</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band intent-band" id="use-cases">
+            <div class="container intent-layout">
+                <div class="section-copy reveal">
+                    <p class="eyebrow">Built for real QR jobs</p>
+                    <h2>One QR app for menus, cards, products, events and social links.</h2>
+                    <p>People search for QR tools in the moment they need to ship something. inQRedible groups those jobs into templates so a restaurant, creator, event team or small business can make a scannable code without rebuilding the format by hand.</p>
+                </div>
+                <div class="intent-grid reveal" aria-label="QR code use cases">
+                    <article>
+                        <h3>Restaurant menus</h3>
+                        <p>Create a URL QR for a digital menu, style it with brand colors and export it for table tents, windows or flyers.</p>
+                    </article>
+                    <article>
+                        <h3>Digital business cards</h3>
+                        <p>Use vCard fields for name, phone, email, company, title, website and address so contacts can save details faster.</p>
+                    </article>
+                    <article>
+                        <h3>Wi-Fi sharing</h3>
+                        <p>Turn a network name, password and security type into a QR code guests can scan instead of typing credentials.</p>
+                    </article>
+                    <article>
+                        <h3>Events and campaigns</h3>
+                        <p>Generate event, location, ticket, landing page or social profile QR codes for posters, packaging and presentations.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band muted guide-band" id="guides">
+            <div class="container guide-layout">
+                <div class="section-copy reveal">
+                    <p class="eyebrow">QR guides</p>
+                    <h2>Start from the exact QR code you need.</h2>
+                    <p>Short guides for high-intent searches, with practical steps and a direct path to the app.</p>
+                </div>
+                <div class="guide-links reveal" aria-label="QR code guides">
+                    <a href="qr-code-with-logo.html">
+                        <strong>QR code with logo</strong>
+                        <span>Design a branded QR on iPhone without hurting readability.</span>
+                    </a>
+                    <a href="wifi-qr-code.html">
+                        <strong>Wi-Fi QR code</strong>
+                        <span>Create a guest Wi-Fi QR for home, office, restaurants or events.</span>
+                    </a>
+                    <a href="barcode-generator-iphone.html">
+                        <strong>Barcode generator for iPhone</strong>
+                        <span>Generate EAN-13, UPC-A, Code 128 and PDF417 codes from the same app.</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -337,6 +462,33 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-band faq-band" id="faq">
+            <div class="container faq-layout">
+                <div class="section-copy reveal">
+                    <p class="eyebrow">Questions</p>
+                    <h2>FAQ for QR creation on iPhone.</h2>
+                </div>
+                <div class="faq-list reveal">
+                    <article>
+                        <h3>Can I create a QR code with a logo on iPhone?</h3>
+                        <p>Yes. inQRedible lets you add a center logo, choose module and eye styles, adjust colors and export the result from your iPhone.</p>
+                    </article>
+                    <article>
+                        <h3>Does inQRedible generate Wi-Fi QR codes?</h3>
+                        <p>Yes. The Wi-Fi template supports open, WEP and WPA/WPA2 networks, hidden networks and the standard QR Wi-Fi format.</p>
+                    </article>
+                    <article>
+                        <h3>Are my QR codes uploaded to a server?</h3>
+                        <p>QR content, logos, selected images and history are processed locally on your iPhone. The app does not upload that content to inQRedible servers to generate codes.</p>
+                    </article>
+                    <article>
+                        <h3>What barcode formats can I create?</h3>
+                        <p>inQRedible supports EAN-13, UPC-A, Code 128 and PDF417 generation, plus scanning for QR codes and compatible barcode formats.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -355,6 +507,9 @@
                 <a href="#crear">Create</a>
                 <a href="#disenar">Design</a>
                 <a href="#escanear">Scan</a>
+                <a href="qr-code-with-logo.html">QR with logo</a>
+                <a href="wifi-qr-code.html">Wi-Fi QR</a>
+                <a href="barcode-generator-iphone.html">Barcodes</a>
                 <a href="privacy.html">Privacy</a>
                 <a href="terms.html">Terms</a>
                 <a href="mailto:support@inqredibleapp.com">Support</a>

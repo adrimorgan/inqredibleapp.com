@@ -10,10 +10,19 @@ Sitio estático de `inqredibleapp.com` para la app nativa iOS **Generador QR: in
 ├── index.html
 ├── privacy.html
 ├── terms.html
+├── qr-code-with-logo.html
+├── wifi-qr-code.html
+├── barcode-generator-iphone.html
+├── robots.txt
+├── sitemap.xml
+├── llms.txt
 ├── es/
 │   ├── index.html
 │   ├── privacy.html
-│   └── terms.html
+│   ├── terms.html
+│   ├── codigo-qr-con-logo.html
+│   ├── codigo-qr-wifi.html
+│   └── generador-codigo-barras-iphone.html
 ├── styles.css
 ├── script.js
 └── images/
@@ -72,3 +81,11 @@ No requiere build ni dependencias de Node.
 - `/es/` contiene la versión española.
 - `script.js` redirige automáticamente desde las páginas raíz a `/es/` cuando el idioma preferido del navegador empieza por `es`.
 - Para forzar la revisión de la versión inglesa desde un navegador en español, añade `?lang=en` a la URL.
+
+## SEO y GEO
+
+- `sitemap.xml` declara las rutas indexables y sus pares `hreflang`.
+- `robots.txt` apunta al sitemap.
+- `llms.txt` resume el producto, claims importantes, rutas principales y enlaces de App Store para crawlers de IA.
+- Las home incluyen `SoftwareApplication`, `WebSite`, `Organization` y `FAQPage` en JSON-LD.
+- Las guías long-tail cubren búsquedas de alta intención: QR con logo, QR Wi-Fi y generador de códigos de barras para iPhone.

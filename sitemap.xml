@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://inqredibleapp.com/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/es/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/qr-code-with-logo.html</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/qr-code-with-logo.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/codigo-qr-con-logo.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/qr-code-with-logo.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/es/codigo-qr-con-logo.html</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/qr-code-with-logo.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/codigo-qr-con-logo.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/qr-code-with-logo.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/wifi-qr-code.html</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/wifi-qr-code.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/codigo-qr-wifi.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/wifi-qr-code.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/es/codigo-qr-wifi.html</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/wifi-qr-code.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/codigo-qr-wifi.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/wifi-qr-code.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/barcode-generator-iphone.html</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/barcode-generator-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/generador-codigo-barras-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/barcode-generator-iphone.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/es/generador-codigo-barras-iphone.html</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/barcode-generator-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/generador-codigo-barras-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/barcode-generator-iphone.html"/>
+    </url>
+</urlset>

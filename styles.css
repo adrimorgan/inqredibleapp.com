@@ -557,6 +557,88 @@ h3 {
     font-weight: 650;
 }
 
+.intent-layout,
+.guide-layout,
+.faq-layout {
+    display: grid;
+    gap: 36px;
+}
+
+.intent-grid,
+.guide-links,
+.faq-list {
+    display: grid;
+    gap: 12px;
+}
+
+.intent-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.intent-grid article,
+.guide-links a,
+.faq-list article,
+.seo-card {
+    border: 1px solid var(--hairline);
+    background: var(--surface);
+}
+
+.intent-grid article,
+.faq-list article {
+    min-height: 178px;
+    padding: 20px;
+    border-radius: 22px;
+}
+
+.intent-grid p,
+.faq-list p {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.96rem;
+}
+
+.guide-layout {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    align-items: start;
+}
+
+.guide-links a {
+    display: block;
+    padding: 20px;
+    border-radius: 22px;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.guide-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.guide-links strong,
+.guide-links span {
+    display: block;
+}
+
+.guide-links strong {
+    font-size: 1.08rem;
+    font-weight: 900;
+}
+
+.guide-links span {
+    margin-top: 6px;
+    color: var(--muted);
+    font-weight: 650;
+}
+
+.faq-layout {
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+    align-items: start;
+}
+
+.faq-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .split-section,
 .feature-showcase,
 .scanner-layout,
@@ -975,6 +1057,130 @@ h3 {
     font-weight: 800;
 }
 
+.seo-main {
+    padding-top: var(--header-height);
+}
+
+.seo-hero {
+    padding: 76px 0;
+    background: var(--hero-bg);
+}
+
+.seo-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.96fr) minmax(280px, 0.74fr);
+    gap: 48px;
+    align-items: center;
+}
+
+.seo-hero h1 {
+    font-size: clamp(2.65rem, 6vw, 5.2rem);
+}
+
+.seo-hero p {
+    max-width: 680px;
+    margin-top: 22px;
+    color: var(--ink-soft);
+    font-size: clamp(1.06rem, 1.5vw, 1.22rem);
+}
+
+.seo-visual {
+    justify-self: center;
+    width: min(100%, 330px);
+}
+
+.seo-section {
+    padding: 76px 0;
+}
+
+.seo-section.muted {
+    background: var(--muted-band);
+}
+
+.seo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.seo-card {
+    padding: 20px;
+    border-radius: 22px;
+}
+
+.seo-card p {
+    margin-top: 10px;
+    color: var(--muted);
+}
+
+.seo-copy {
+    max-width: 790px;
+}
+
+.seo-copy p {
+    margin-top: 16px;
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+}
+
+.steps-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 28px;
+    counter-reset: steps;
+}
+
+.steps-list li {
+    position: relative;
+    min-height: 68px;
+    padding: 18px 18px 18px 64px;
+    border: 1px solid var(--hairline);
+    border-radius: 22px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    list-style: none;
+}
+
+.steps-list li::before {
+    counter-increment: steps;
+    content: counter(steps);
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    color: #06101e;
+    background: var(--green);
+    font-weight: 900;
+}
+
+.related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.related-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 14px;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    font-weight: 800;
+}
+
+.related-links a:hover {
+    color: var(--blue-deep);
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --system-bg: #080b11;
@@ -1065,7 +1271,10 @@ h3 {
     .feature-showcase,
     .scanner-layout,
     .export-layout,
-    .pro-grid {
+    .pro-grid,
+    .guide-layout,
+    .faq-layout,
+    .seo-hero-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1083,6 +1292,11 @@ h3 {
 
     .metrics-grid {
         grid-template-columns: 1fr;
+    }
+
+    .intent-grid,
+    .seo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .section-copy,
@@ -1173,7 +1387,9 @@ h3 {
 
     .content-grid,
     .export-panel,
-    .download-grid {
+    .download-grid,
+    .faq-list,
+    .seo-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1222,6 +1438,15 @@ h3 {
 
     .section-band {
         padding: 68px 0;
+    }
+
+    .seo-hero,
+    .seo-section {
+        padding: 58px 0;
+    }
+
+    .intent-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero {
@@ -1291,6 +1516,10 @@ h3 {
 
     .metrics-grid div,
     .content-grid article,
+    .intent-grid article,
+    .faq-list article,
+    .guide-links a,
+    .seo-card,
     .feature-list div,
     .scan-points div,
     .resolution-stack div,

@@ -1,0 +1,30 @@
+# inQRedible
+
+> Native iPhone app for creating, customizing, scanning and exporting QR codes and barcodes.
+
+inQRedible is an iOS app for QR code generation, QR reading, barcode generation and barcode scanning. It supports QR templates for URL, text, clipboard, Wi-Fi, vCard, email, SMS, phone, location, calendar events and social profiles including Instagram, Facebook, X, WhatsApp, YouTube, Spotify, TikTok and Snapchat. Barcode generation supports EAN-13, UPC-A, Code 128 and PDF417.
+
+Important facts:
+- Website: https://inqredibleapp.com/
+- Spanish website: https://inqredibleapp.com/es/
+- App Store: https://apps.apple.com/app/inqredible/id6748907388
+- App Store Spain: https://apps.apple.com/es/app/inqredible/id6748907388
+- Platform: iPhone / iOS
+- Free download with optional inQRedible PRO subscription managed by Apple.
+- QR content, selected images and history are processed locally on the device and are not uploaded to inQRedible servers to generate codes.
+- Scanner risk signals are informational only and do not guarantee that a link is safe or dangerous.
+
+Primary pages:
+- QR code generator for iPhone: https://inqredibleapp.com/
+- Generador QR para iPhone: https://inqredibleapp.com/es/
+- QR code with logo: https://inqredibleapp.com/qr-code-with-logo.html
+- Código QR con logo: https://inqredibleapp.com/es/codigo-qr-con-logo.html
+- Wi-Fi QR code: https://inqredibleapp.com/wifi-qr-code.html
+- Código QR Wi-Fi: https://inqredibleapp.com/es/codigo-qr-wifi.html
+- Barcode generator for iPhone: https://inqredibleapp.com/barcode-generator-iphone.html
+- Generador de códigos de barras para iPhone: https://inqredibleapp.com/es/generador-codigo-barras-iphone.html
+
+Support and legal:
+- Privacy: https://inqredibleapp.com/privacy.html
+- Terms: https://inqredibleapp.com/terms.html
+- Contact: support@inqredibleapp.com
