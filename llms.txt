@@ -10,9 +10,14 @@ Important facts:
 - App Store: https://apps.apple.com/app/inqredible/id6748907388
 - App Store Spain: https://apps.apple.com/es/app/inqredible/id6748907388
 - Platform: iPhone / iOS
-- Free download with optional inQRedible PRO subscription managed by Apple.
-- QR content, selected images and history are processed locally on the device and are not uploaded to inQRedible servers to generate codes.
-- Scanner risk signals are informational only and do not guarantee that a link is safe or dangerous.
+- FREE includes basic QR creation, warned-link scanning, 1024 px export and up to three local projects.
+- PRO adds premium designs and content types, image assets, brand kits, unlimited projects, 2K/4K and transparent PNG, plus professional PNG, SVG and PDF export.
+- Weekly and yearly subscriptions are the only displayed purchase plans. Price, currency and eligibility come from StoreKit. A yearly trial appears only when StoreKit confirms configuration and current-user eligibility.
+- QR content, selected images and history are processed locally for product functions and are not uploaded to inQRedible servers to generate codes.
+- Optional Firebase Analytics, Crashlytics, Performance and Apple AdServices attribution remain disabled until consent and exclude QR, scan, clipboard and user-entered payloads.
+- Scanner risk signals are informational only and do not certify that a destination is safe or unsafe.
+- Projects are local with recovery safeguards, not cloud sync or guaranteed recovery.
+- Professional export uses RGB/sRGB; it does not provide CMYK conversion or guarantee printer, material or physical scan results.
 
 Primary pages:
 - QR code generator for iPhone: https://inqredibleapp.com/
@@ -27,4 +32,9 @@ Primary pages:
 Support and legal:
 - Privacy: https://inqredibleapp.com/privacy.html
 - Terms: https://inqredibleapp.com/terms.html
+- Support: https://inqredibleapp.com/support.html
+- Privacidad: https://inqredibleapp.com/es/privacy.html
+- Términos: https://inqredibleapp.com/es/terms.html
+- Soporte: https://inqredibleapp.com/es/soporte.html
 - Contact: support@inqredibleapp.com
+- Content version: legal-2.5.0-v1

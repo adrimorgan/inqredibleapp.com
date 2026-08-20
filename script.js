@@ -14,6 +14,7 @@
         '/index.html': '/es/',
         '/privacy.html': '/es/privacy.html',
         '/terms.html': '/es/terms.html',
+        '/support.html': '/es/soporte.html',
         '/qr-code-with-logo.html': '/es/codigo-qr-con-logo.html',
         '/wifi-qr-code.html': '/es/codigo-qr-wifi.html',
         '/barcode-generator-iphone.html': '/es/generador-codigo-barras-iphone.html'

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+    <meta name="description" content="How inQRedible 2.5.0 processes local QR content, optional consented Firebase diagnostics, Apple Ads attribution and StoreKit purchases.">
+    <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#080b11" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://inqredibleapp.com/privacy.html">
@@ -16,66 +17,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="legal-page">
+    <a class="skip-link" href="#legal-content">Skip to content</a>
     <header class="site-header is-scrolled">
         <div class="container nav-shell">
-            <a href="index.html" class="brand" aria-label="Back to inQRedible">
-                <img src="images/app-icon.png" alt="" class="brand-icon" width="44" height="44">
-                <span>
-                    <strong>inQRedible</strong>
-                    <small>Privacy</small>
-                </span>
-            </a>
-            <nav class="nav-links" aria-label="Secondary navigation">
-                <a href="index.html#crear">Create</a>
-                <a href="index.html#disenar">Design</a>
-                <a href="index.html#escanear">Scan</a>
-                <a href="terms.html">Terms</a>
-            </nav>
-            <a class="nav-cta" href="https://apps.apple.com/app/inqredible/id6748907388" target="_blank" rel="noopener">Download</a>
+            <a href="index.html" class="brand" aria-label="Back to inQRedible"><img src="images/app-icon.png" alt="" class="brand-icon" width="44" height="44"><span><strong>inQRedible</strong><small>Privacy</small></span></a>
+            <nav class="nav-links" aria-label="Legal navigation"><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="es/privacy.html" lang="es">Español</a></nav>
+            <a class="nav-cta" href="https://apps.apple.com/app/inqredible/id6748907388" target="_blank" rel="noopener">App Store</a>
         </div>
     </header>
-
-    <main class="legal-main">
+    <main class="legal-main" id="legal-content">
         <div class="container legal-shell">
-            <aside class="legal-aside">
-                <a class="legal-back" href="index.html">Back home</a>
-            </aside>
-
+            <aside class="legal-aside"><a class="legal-back" href="index.html">Back home</a><p class="legal-version">legal-2.5.0-v1</p></aside>
             <article class="legal-card">
                 <h1>Privacy Policy</h1>
-                <p class="legal-updated">Last updated: May 13, 2026</p>
-
-                <p>Your privacy matters to inQRedible. This policy explains what data the app processes, how it is used and what data is not collected when you create, scan or export QR codes and barcodes.</p>
-
-                <h2>Data you enter in the app</h2>
-                <p>Your QR content is processed on your device. Text, links, Wi-Fi networks, contacts, events, phone numbers, emails, coordinates, images, logos, scanned codes and history are stored locally on your iPhone and are not uploaded to inQRedible servers to create the QR code.</p>
-
-                <h2>Usage analytics</h2>
-                <p>The app may record anonymous interaction events to understand how the product works and improve the experience. These events may include, for example, app launches, template selection, scanner usage, exports, errors, subscription status or paywall actions.</p>
-                <ul>
-                    <li>We do not include raw QR content, scanned URLs, phone numbers, emails, coordinates, SSIDs, passwords, clipboard text or images.</li>
-                    <li>Events are enriched with anonymous installation, session and event identifiers, plus language, platform, app version and build.</li>
-                    <li>Events are written to a local file inside the app sandbox. If an HTTPS analytics endpoint is configured, they may also be sent to that endpoint.</li>
-                    <li>This data is not linked to your identity and is not used for advertising tracking.</li>
-                </ul>
-
-                <h2>Purchases and subscriptions</h2>
-                <p>Purchases and subscriptions are processed by Apple App Store and StoreKit. inQRedible receives the purchase or subscription status to unlock PRO features, but it does not receive your card details or other payment data.</p>
-
-                <h2>Camera, photos and permissions</h2>
-                <p>The scanner uses the camera when you grant permission. Images or logos you select are used to create or customize QR codes inside the app. You can revoke permissions from iOS Settings.</p>
-
-                <h2>Third-party services</h2>
-                <p>The app uses Apple services for purchases, subscription restoration and subscription management. Apple applies its own privacy policies to those services.</p>
-
-                <h2>Retention and control</h2>
-                <p>Local data remains on your device while the app is installed unless you delete it from the app or uninstall inQRedible. To manage or cancel a subscription, use your Apple ID settings.</p>
-
-                <h2>Changes to this policy</h2>
-                <p>We may update this policy when the app, analytics or legal requirements change. The current version will be published on this page.</p>
-
-                <h2>Contact</h2>
-                <p>For any privacy question, email us at <a href="mailto:support@inqredibleapp.com">support@inqredibleapp.com</a>.</p>
+                <p class="legal-updated">Effective August 20, 2026 · Content version legal-2.5.0-v1</p>
+                <p>This policy explains how inQRedible processes information when you create, scan, save, import or export QR codes and barcodes, use optional analytics and diagnostics, or make an App Store purchase.</p>
+                <section id="scope" data-section="scope"><h2>1. Scope and contact</h2><p>inQRedible (“we”) provides the iPhone app and this website. Questions or privacy requests can be sent to <a href="mailto:support@inqredibleapp.com">support@inqredibleapp.com</a>. This policy covers app behavior for release 2.5.0; Apple and Google process information under their own terms when their services are used.</p></section>
+                <section id="local-data" data-section="local-data"><h2>2. Product content stays local</h2><p>QR and barcode contents, scanned results, URLs and hosts, clipboard or user-entered text, Wi-Fi fields, contacts, events, coordinates, images, logos, filenames, paths, project names, projects and history are processed on your device for app functions. They are not uploaded to inQRedible servers to generate, scan, save or export a code, and they are forbidden from optional analytics and diagnostics.</p><p>Projects use local transactional recovery and bounded retry. This is not cloud sync or guaranteed recovery. Device backups, restores and deletion of the app are controlled by iOS and your Apple settings.</p></section>
+                <section id="optional-telemetry" data-section="optional-telemetry"><h2>3. Optional analytics, diagnostics and attribution</h2><p>Firebase Analytics, Firebase Crashlytics, Firebase Performance and Apple AdServices attribution remain disabled until you make an explicit optional choice in the app. Declining keeps them disabled. Revoking consent disables future collection, cancels active performance traces and purges reports that have not yet been sent. Re-enabling starts a new consent period and does not replay an earlier period.</p><ul><li><strong>Firebase Analytics:</strong> bounded events about app areas, actions and outcomes, such as opening a feature, selecting a plan type, completing an export or receiving a sanitized failure category, together with limited technical context such as app version and build.</li><li><strong>Firebase Crashlytics:</strong> crash stack traces, approved diagnostic categories and provider-generated installation identifiers and device/app metadata needed to diagnose stability.</li><li><strong>Firebase Performance:</strong> approved duration traces for launch, catalog, persistence, scanner and export operations, plus provider-generated technical data described by Firebase.</li><li><strong>Apple AdServices:</strong> an Apple attribution token may be sent to Apple to determine whether an install followed an App Store ad. The response may contain non-user-identifying campaign fields. The app does not use IDFA or cross-app tracking.</li></ul></section>
+                <section id="telemetry-exclusions" data-section="telemetry-exclusions"><h2>4. Data excluded from telemetry</h2><p>Optional analytics and diagnostics must not contain QR, scan or clipboard payloads; URLs or hosts; contact, event or Wi-Fi data; images or media metadata; filenames or paths; project names; free text or raw errors; prices; receipts; account or transaction identifiers; or user identifiers. Purchase reporting uses bounded plan, lifecycle and outcome categories rather than commercial or account data.</p></section>
+                <section id="providers" data-section="providers"><h2>5. Providers and retention boundaries</h2><p>Google processes Firebase data under the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy and security terms</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. Firebase currently documents 90-day retention before removal begins for Crashlytics stack traces and associated identifiers; 30 days for IP-associated Performance events; and 60 days for installation-associated and de-identified Performance data. Google Analytics retention depends on the property’s provider-console settings. Provider documentation and console configuration control data already delivered to Google and may change independently of the app.</p><p>Apple processes App Store, StoreKit and AdServices information under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/data/en/apple-advertising/" target="_blank" rel="noopener">Apple Advertising &amp; Privacy</a>. Changing consent inside inQRedible stops new app-side collection; it does not retroactively erase information already delivered to Apple or Google.</p></section>
+                <section id="purchases" data-section="purchases"><h2>6. Purchases and subscriptions</h2><p>Apple and StoreKit process purchases, payment details, subscription management and refunds. inQRedible receives verified product and entitlement status needed to show offers and unlock PRO. Payment-card data is not provided to inQRedible, and prices, receipts and account or transaction identifiers are not included in optional analytics or diagnostics.</p></section>
+                <section id="permissions" data-section="permissions"><h2>7. Camera, photos and files</h2><p>The camera is used only after permission to scan codes. Photos and files you choose are used for the requested import, design or export workflow. You can change permissions in iOS Settings. Imports are bounded and cancellable; files that exceed supported size or complexity limits may be rejected without being uploaded.</p></section>
+                <section id="retention-controls" data-section="retention-controls"><h2>8. Local retention and your controls</h2><p>Local projects, history and selected assets remain on the device until you delete them, an app recovery window expires, or iOS removes the app’s data. Recoverable deletions may temporarily retain local tombstone and asset data until the undo window expires. In Settings you can decline, grant or revoke optional telemetry, reset its local consent state, restore purchases and manage subscriptions.</p></section>
+                <section id="rights" data-section="rights"><h2>9. Requests and legal rights</h2><p>Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, or withdraw consent. Contact us with the app version and your request, but do not send QR contents, Wi-Fi credentials, contacts, images, receipts or transaction identifiers. Provider-held or Apple Account data may need to be managed directly through Apple or Google.</p></section>
+                <section id="changes-contact" data-section="changes-contact"><h2>10. Changes and contact</h2><p>Material changes will be published with a new content version and effective date. For privacy questions, contact <a href="mailto:support@inqredibleapp.com">support@inqredibleapp.com</a> or use the <a href="support.html">Support page</a>.</p></section>
             </article>
         </div>
     </main>

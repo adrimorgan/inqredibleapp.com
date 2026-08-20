@@ -1,0 +1,88 @@
+{
+  "schema_version": "website-release-content-v1",
+  "release": "2.5.0",
+  "legal_version": "legal-2.5.0-v1",
+  "effective_date": "2026-08-20",
+  "source": {
+    "repository": "adrimorgan/inQRedible",
+    "release_branch_sha": "ef134292c3e68d6c2e0721c48075bad7f1a6fe8b",
+    "contract": "Config/ReleaseContentContract.json",
+    "handoff": "docs/release/2.5.0-app-store-handoff.json"
+  },
+  "publication": {
+    "source_state": "published_to_main_pending_external_validation",
+    "live_validation_owner": "adrimorgan/inQRedible#47",
+    "material_legal_review": "pending_carlos_or_qualified_review",
+    "website_revision": "recorded_on_adrimorgan/inqredibleapp.com#1_closure"
+  },
+  "routes": {
+    "en": {
+      "home": "https://inqredibleapp.com/",
+      "privacy": "https://inqredibleapp.com/privacy.html",
+      "terms": "https://inqredibleapp.com/terms.html",
+      "support": "https://inqredibleapp.com/support.html"
+    },
+    "es": {
+      "home": "https://inqredibleapp.com/es/",
+      "privacy": "https://inqredibleapp.com/es/privacy.html",
+      "terms": "https://inqredibleapp.com/es/terms.html",
+      "support": "https://inqredibleapp.com/es/soporte.html"
+    },
+    "support_email": "support@inqredibleapp.com"
+  },
+  "storekit": {
+    "displayed_products": ["weekly", "yearly"],
+    "yearly_intro_offer": "only_when_storekit_configured_and_user_eligible",
+    "historical_lifetime": "recognition_only_not_displayed_or_purchasable",
+    "commercial_values_source": "storekit_runtime"
+  },
+  "feature_matrix": [
+    {"id": "basic_creation", "free": true, "pro": true},
+    {"id": "scanner_warned_links", "free": true, "pro": true},
+    {"id": "standard_1024_export", "free": true, "pro": true},
+    {"id": "three_projects", "free": true, "pro": true},
+    {"id": "premium_designs", "free": false, "pro": true},
+    {"id": "premium_content_types", "free": false, "pro": true},
+    {"id": "image_assets", "free": false, "pro": true},
+    {"id": "brand_kits", "free": false, "pro": true},
+    {"id": "unlimited_projects", "free": false, "pro": true},
+    {"id": "high_resolution_export", "free": false, "pro": true},
+    {"id": "transparent_export", "free": false, "pro": true},
+    {"id": "professional_export", "free": false, "pro": true}
+  ],
+  "providers": [
+    {"name": "Firebase Analytics", "consent": "disabled_until_granted", "retention": "google_analytics_property_setting"},
+    {"name": "Firebase Crashlytics", "consent": "disabled_until_granted", "retention": "90_days_before_removal_begins_per_firebase_documentation"},
+    {"name": "Firebase Performance", "consent": "disabled_until_granted", "retention": "30_days_ip_associated_60_days_installation_associated_or_deidentified_per_firebase_documentation"},
+    {"name": "Apple AdServices", "consent": "disabled_until_granted", "retention": "apple_controlled"}
+  ],
+  "consent": {
+    "not_determined": "disabled",
+    "denied": "disabled_and_purge_unsent_reports",
+    "granted": "new_consent_period_only",
+    "revoked": "cancel_traces_disable_and_purge_unsent_reports",
+    "reenabled": "no_replay_from_previous_period"
+  },
+  "telemetry_forbidden": [
+    "account_or_transaction_identifier",
+    "contact_event_or_wifi_data",
+    "filename_or_path",
+    "free_text_or_raw_error",
+    "image_or_media_metadata",
+    "price_or_receipt",
+    "project_name",
+    "qr_scan_or_clipboard_payload",
+    "url_or_host",
+    "user_identifier"
+  ],
+  "claim_boundaries": {
+    "scanner": "warnings_are_informational_not_a_safety_guarantee",
+    "projects": "local_recovery_no_cloud_sync_or_guaranteed_recovery",
+    "structured_payloads": "reader_compatibility_depends_on_receiving_app",
+    "professional_export": "rgb_srgb_no_cmyk_printer_material_or_scan_guarantee"
+  },
+  "required_home_claims": {
+    "en": ["1024 px", "2K/4K", "PNG, SVG and PDF", "StoreKit", "up to three projects", "optional telemetry requires consent"],
+    "es": ["1024 px", "2K/4K", "PNG, SVG y PDF", "StoreKit", "hasta tres proyectos", "telemetría opcional requiere consentimiento"]
+  }
+}

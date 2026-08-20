@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://inqredibleapp.com/</loc>
-        <lastmod>2026-06-29</lastmod>
+        <lastmod>2026-08-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/"/>
@@ -11,12 +11,66 @@
     </url>
     <url>
         <loc>https://inqredibleapp.com/es/</loc>
-        <lastmod>2026-06-29</lastmod>
+        <lastmod>2026-08-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/privacy.html</loc>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/es/privacy.html</loc>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/terms.html</loc>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/terms.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/es/terms.html</loc>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/terms.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/support.html</loc>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/support.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/soporte.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/support.html"/>
+    </url>
+    <url>
+        <loc>https://inqredibleapp.com/es/soporte.html</loc>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://inqredibleapp.com/support.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://inqredibleapp.com/es/soporte.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://inqredibleapp.com/support.html"/>
     </url>
     <url>
         <loc>https://inqredibleapp.com/qr-code-with-logo.html</loc>

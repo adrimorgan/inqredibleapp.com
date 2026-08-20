@@ -1,2 +1,4 @@
 *.DS_Store
 .codebase-memory/
+__pycache__/
+*.pyc
